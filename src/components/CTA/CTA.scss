@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.cta-section {
+    background: $blue-dark;
+    padding: 64px 0;
+}
+
+.cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    @media (max-width: $bp-md) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.cta-text {
+    h2 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 10px;
+
+        @media (max-width: $bp-md) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.7);
+        max-width: 440px;
+        line-height: 1.7;
+    }
+}
+
+.cta-btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}

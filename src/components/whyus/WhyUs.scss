@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+.why-section {
+    background: $bg2;
+    padding: 40px 0;
+    border-bottom: 1px solid $border-light;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    @media (max-width: $bp-lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-md) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.why-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: $radius;
+    border: 1px solid $border-light;
+}
+
+.why-icon {
+    font-size: 24px;
+    color: $blue;
+    background: $blue-light;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.why-title {
+    font-family: $font-heading;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.why-desc {
+    font-size: 13px;
+    color: $text-muted;
+    line-height: 1.6;
+}
