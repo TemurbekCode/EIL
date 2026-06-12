@@ -100,6 +100,29 @@ const uz_extra = {
   form_sending: "Yuborilmoqda...",
   form_success_title: "Muvaffaqiyatli yuborildi!",
 
+  form_title: "Murojaat yuborish",
+  form_sub: "Barcha maydonlarni to'ldiring, tez orada javob beramiz.",
+  form_name: "Ismingiz",
+  form_name_ph: "Ism Familiya",
+  form_phone: "Telefon raqam",
+  form_service: "Xizmat turi",
+  form_service_placeholder: "Xizmatni tanlang",
+  form_message: "Xabar",
+  form_message_ph: "Muammongiz yoki savolingizni yozing...",
+  form_submit: "Yuborish",
+  form_note: "Birinchi konsultatsiya bepul. Ma'lumotlaringiz uchinchi shaxslarga berilmaydi.",
+
+  contact_phone: "Telefon",
+  contact_telegram: "Telegram",
+  contact_email: "Email",
+  contact_address: "Manzil",
+
+  working_hours: "Ish vaqti",
+  wh_weekdays: "Dushanba — Juma",
+  wh_saturday: "Shanba",
+  wh_sunday: "Yakshanba",
+  wh_day_off: "Dam olish",
+
   // FAQ
   faq_eyebrow: "Ko'p so'raladigan savollar",
   faq_title: "Savollaringiz bormi?",
@@ -264,6 +287,19 @@ const ru_extra = {
   field_required: "Заполните это поле",
   form_sending: "Отправляется...",
   form_success_title: "Успешно отправлено!",
+
+  form_title: "Отправить заявку",
+  form_sub: "Заполните все поля, мы ответим в ближайшее время",
+  form_name: "Ваше имя",
+  form_name_ph: "Ism Familiya",
+  form_phone: "Номер телефона",
+  form_service: "Тип услуги",
+  form_service_placeholder: "Xizmatni tanlang",
+  form_message: "Сообщение",
+  form_message_ph: "Muammongiz yoki savolingizni yozing...",
+  form_submit: "Yuborish",
+  form_note: "Первая консультация бесплатна. Ваши данные не передаются третьим лицам.",
+
 
   // FAQ
   faq_eyebrow: "Часто задаваемые вопросы",

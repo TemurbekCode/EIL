@@ -5,20 +5,20 @@ import emailjs from '@emailjs/browser';
 
 const INFO_CARDS = [
     {
-        href: 'tel:+998901234567',
+        href: 'tel:+998941828878',
         icon: 'ti-phone',
         iconBg: '#EBF3FF',
         iconColor: '#1A4FAF',
         labelKey: 'contact_phone',
-        value: '+998 90 123 45 67',
+        value: '+998 94 182 88 78',
     },
     {
-        href: 'https://t.me/eillogistics',
+        href: 'https://t.me/Rahmatullayev_25',
         icon: 'ti-brand-telegram',
         iconBg: '#E6F9F2',
         iconColor: '#0F6E56',
         labelKey: 'contact_telegram',
-        value: '@eillogistics',
+        value: '@Rahmatullayev_25',
     },
     {
         href: 'https://instagram.com/eil_logistics',
@@ -37,12 +37,12 @@ const INFO_CARDS = [
         value: '@eil_bot',
     },
     {
-        href: 'mailto:info@eil.uz',
+        href: 'mailto:humoyunr66@gmail.com',
         icon: 'ti-mail',
         iconBg: '#FFF4E6',
         iconColor: '#854F0B',
         labelKey: 'contact_email',
-        value: 'info@eil.uz',
+        value: 'humoyunr66@gmail.com',
     },
     {
         href: null,
@@ -50,7 +50,7 @@ const INFO_CARDS = [
         iconBg: '#F5F7FA',
         iconColor: '#5C6A7A',
         labelKey: 'contact_address',
-        valueKey: 'address_value',
+        valueKey: "Samarqand, Rudakiy Ko'chasi",
     },
 ];
 
@@ -192,7 +192,7 @@ export default function Contact({ t }) {
                                 </div>
                                 <div className="wh-row">
                                     <span>{t('wh_saturday')}</span>
-                                    <span className="wh-time">10:00 — 15:00</span>
+                                    <span className="wh-time">9:00 — 18:00</span>
                                 </div>
                                 <div className="wh-row">
                                     <span>{t('wh_sunday')}</span>
