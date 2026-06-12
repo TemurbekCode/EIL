@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ContactPage.scss';
+import emailjs from '@emailjs/browser';
 
 const INFO_CARDS = [
     {
@@ -64,20 +65,56 @@ export default function Contact({ t }) {
     const handleChange = (e) =>
         setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         const errs = {};
+
         if (!form.name.trim()) errs.name = true;
         if (!form.phone.trim()) errs.phone = true;
-        if (Object.keys(errs).length) { setErrors(errs); return; }
+
+        if (Object.keys(errs).length) {
+            setErrors(errs);
+            return;
+        }
 
         setErrors({});
         setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
+
+        try {
+            await emailjs.send(
+                'service_ra8c1y9',
+                'template_yqd93xs',
+                {
+                    name: form.name,
+                    phone: form.phone,
+                    service: form.service ? t(form.service) : 'Tanlanmagan',
+                    message: form.message || 'Xabar yozilmagan',
+                    time: new Date().toLocaleString('uz-UZ'),
+                },
+                'HIGOyfM2irjV0bE5U'
+            );
+
             setSent(true);
-            setForm({ name: '', phone: '', service: '', message: '' });
-            setTimeout(() => setSent(false), 6000);
-        }, 1200);
+
+            setForm({
+                name: '',
+                phone: '',
+                service: '',
+                message: '',
+            });
+
+            setTimeout(() => {
+                setSent(false);
+            }, 6000);
+
+        } catch (error) {
+            console.log("EMAILJS ERROR:", error);
+            console.log("STATUS:", error?.status);
+            console.log("TEXT:", error?.text);
+
+            alert(`Status: ${error?.status}\nText: ${error?.text}`);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -247,6 +284,7 @@ export default function Contact({ t }) {
 
                                 {/* Submit */}
                                 <button
+                                    type="button"
                                     className={`btn-submit${loading ? ' loading' : ''}`}
                                     onClick={handleSubmit}
                                     disabled={loading}
