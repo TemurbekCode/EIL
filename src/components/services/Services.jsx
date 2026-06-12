@@ -14,7 +14,7 @@ export default function Services({ t }) {
       <div className="container">
         <div className="section-head">
           <div className="section-eyebrow">{t('services_eyebrow')}</div>
-          <h2 className="section-title">{t('services_title')}</h2>
+          <h1 className="section-title">{t('services_title')}</h1>
           <p className="section-sub">{t('services_sub')}</p>
         </div>
         <div className="services-grid">

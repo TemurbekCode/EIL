@@ -85,9 +85,6 @@ export default function Education({ t }) {
                                 <a href="#courses" className="btn-primary">
                                     <i className="ti ti-arrow-down" /> {t('edu_see_courses')}
                                 </a>
-                                <Link to="/contact" className="btn-outline">
-                                    {t('get_consultation')}
-                                </Link>
                             </div>
                         </div>
                         <div className="edu-hero-right">
@@ -117,7 +114,6 @@ export default function Education({ t }) {
             {/* ── WHY US ── */}
             <section className="edu-why">
                 <div className="container">
-                    <div className="section-eyebrow">{t('why_us_eyebrow')}</div>
                     <h2 className="section-title">{t('why_study_title')}</h2>
                     <div className="edu-why-grid">
                         {WHY_ITEMS.map((w, i) => (
@@ -139,7 +135,6 @@ export default function Education({ t }) {
                 <div className="container">
                     <div className="section-eyebrow">{t('courses_eyebrow')}</div>
                     <h2 className="section-title">{t('courses_title')}</h2>
-                    <p className="section-sub">{t('courses_sub')}</p>
 
                     <div className="courses-grid">
                         {COURSES.map((c, i) => (
@@ -170,16 +165,6 @@ export default function Education({ t }) {
                                         <span><i className="ti ti-clock" /> {c.duration} {t('weeks')}</span>
                                         <span><i className="ti ti-users" /> {t('max')} {c.students}</span>
                                         <span><i className="ti ti-certificate" /> {t('certificate')}</span>
-                                    </div>
-
-                                    <div className="course-footer">
-                                        <div className="course-price">
-                                            {c.price}
-                                            <span>UZS / {t('per_month')}</span>
-                                        </div>
-                                        <Link to="/contact" className="btn-primary btn-sm">
-                                            {t('enroll')} <i className="ti ti-arrow-right" />
-                                        </Link>
                                     </div>
                                 </div>
                             </div>

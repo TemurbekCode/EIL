@@ -16,7 +16,7 @@ export default function Header({ t }) {
         <div className="hero-grid">
           <div className="hero-left">
             <div className="hero-badge"><span className="badge-dot" />{t('hero_badge')}</div>
-            <h1 className="hero-title">{t('hero_title1')}<em> {t('hero_title2')}</em></h1>
+            <h1 className="hero-title">{t('hero_title1')}<em><br /> {t('hero_title2')}</em></h1>
             <p className="hero-sub">{t('hero_sub')}</p>
             <div className="hero-actions">
               <Link to="/contact" className="btn-primary"><i className="ti ti-phone" /> {t('hero_cta_primary')}</Link>
@@ -40,9 +40,9 @@ export default function Header({ t }) {
               <div className="service-items">
                 {SERVICE_ITEMS.map((s,i) => (
                   <div key={i} className="svc-item">
-                    <div className="svc-icon" style={{background:s.bg}}><i className={`ti ${s.icon}`} style={{color:s.color}} /></div>
+                    <div className="svc-icon" style={{background:s.bg}}><i className={`ti ${s.icon}`} style={{color:s.color}}/></div>
                     <div className="svc-info"><div className="svc-name">{t(s.nameKey)}</div><div className="svc-desc">{t(s.descKey)}</div></div>
-                    <div className="svc-check" style={{background:s.bg}}><i className="ti ti-check" style={{color:s.color}} /></div>
+                    <div className="svc-check" style={{background:s.bg}}><i className="ti ti-check" style={{color:s.color}}/></div>
                   </div>
                 ))}
               </div>

@@ -19,7 +19,7 @@ export default function Navbar({ lang, setLang, t }) {
 
         {/* LOGO */}
         <Link to="/" className="logo">
-          <div className="logo-mark">EIL</div>
+          <img className="logo-mark" src="logo-eil.jpg" alt="" />
           <div className="logo-text">
             Export Import <span>Logistics</span>
           </div>

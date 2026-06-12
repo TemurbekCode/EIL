@@ -8,8 +8,8 @@
 
 // ── HERO ──────────────────────────────────
 .edu-hero {
-  background: linear-gradient(135deg, #0B1F6B 0%, #1A4FAF 50%, #2563EB 100%);
-  padding: 80px 0 72px;
+  background: linear-gradient(135deg, #091d6e 0%, #1448a9 50%, #1a56d8 100%);
+  padding: 80px 0 40px;
   position: relative;
   overflow: hidden;
 
@@ -101,7 +101,7 @@
 
 // Stats card (right side)
 .edu-stats-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: $radius;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
   overflow: hidden;
@@ -111,7 +111,7 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 20px 24px;
+  padding: 15px 25px;
   border-bottom: 1px solid $border-light;
 
   &:last-child { border-bottom: none; }
@@ -211,7 +211,7 @@
 
 // ── COURSES ───────────────────────────────
 .edu-courses {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .courses-grid {

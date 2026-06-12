@@ -8,6 +8,26 @@
     margin-bottom: 40px;
 }
 
+.section-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #534AB7;
+}
+
+.section-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.section-sub {
+    font-size: 14px;
+    color: $text-muted;
+    max-width: 450px;
+}
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

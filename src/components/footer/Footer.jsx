@@ -8,7 +8,7 @@ export default function Footer({ t }) {
       <div className="container footer-inner">
         <div className="footer-brand">
           <div className="logo">
-            <div className="logo-mark">EIL</div>
+            <img className="logo-mark" src="logo-eil.jpg" />
             <div className="logo-text">
               Export Import <span>Logistics</span>
             </div>
