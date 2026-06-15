@@ -2,8 +2,11 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: white;
-  border-bottom: 1px solid #e7edf5;
+
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+
+  transition: 0.3s;
 }
 
 .nav-inner {
@@ -14,6 +17,7 @@
 }
 
 /* LOGO */
+
 .logo {
   display: flex;
   align-items: center;
@@ -25,19 +29,21 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .logo-text {
   font-size: 14px;
   font-weight: 600;
-  color: #172033;
+  color: var(--text);
 
   span {
     color: #18479d;
   }
 }
 
-/* DESKTOP */
+/* DESKTOP LINKS */
+
 .nav-links {
   display: flex;
   gap: 10px;
@@ -46,14 +52,19 @@
 .nav-link {
   text-decoration: none;
   font-size: 13px;
-  color: #4f5d70;
+  color: var(--text);
+
   padding: 6px 10px;
   border-radius: 8px;
 
+  transition: 0.25s;
+
   &:hover {
-    background: #f3f6fa;
+    background: rgba(24, 71, 157, 0.08);
   }
 }
+
+/* RIGHT SIDE */
 
 .nav-right {
   display: flex;
@@ -61,19 +72,28 @@
   gap: 10px;
 }
 
-/* LANG */
+/* LANGUAGE */
+
 .lang-toggle {
   display: flex;
-  background: #f1f4f8;
+
+  background: var(--bg);
+  border: 1px solid var(--border);
+
   border-radius: 8px;
   padding: 2px;
 
   button {
     border: none;
     background: transparent;
+
+    color: var(--text);
+
     padding: 5px 10px;
     cursor: pointer;
+
     border-radius: 6px;
+    transition: 0.25s;
   }
 
   .active {
@@ -82,31 +102,83 @@
   }
 }
 
-/* BUTTON */
+/* THEME BUTTON */
+
+.theme-btn {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: var(--bg);
+  color: var(--text);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+
+  transition: 0.25s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.05);
+}
+
+.mobile-theme {
+  width: 100%;
+  height: 48px;
+}
+
+/* PRIMARY BUTTON */
+
 .btn-primary {
   background: #18479d;
   color: white;
+
   padding: 8px 14px;
+
   border-radius: 8px;
   text-decoration: none;
+
+  transition: 0.25s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
 }
 
 /* BURGER */
+
 .burger {
   display: none;
-  font-size: 28px;
+
   background: none;
   border: none;
+
+  color: var(--text);
+
+  font-size: 28px;
+  cursor: pointer;
 }
 
 /* OVERLAY */
+
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+
+  background: rgba(0, 0, 0, 0.5);
+
   opacity: 0;
   visibility: hidden;
+
   transition: 0.25s;
+
   z-index: 999;
 }
 
@@ -116,16 +188,22 @@
 }
 
 /* MOBILE MENU */
+
 .mobile-menu {
   position: fixed;
+
   top: 0;
   right: 0;
+
   width: 100vw;
   height: 100vh;
-  background: white;
+
+  background: var(--card);
+
   z-index: 1000;
 
   padding: 60px 20px;
+
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -139,43 +217,66 @@
 }
 
 /* CLOSE BUTTON */
+
 .close-btn {
   position: absolute;
+
   top: 15px;
   right: 15px;
+
   font-size: 26px;
+
   border: none;
   background: transparent;
+
+  color: var(--text);
+
   cursor: pointer;
 }
 
 /* MOBILE LINKS */
+
 .mobile-link {
   text-decoration: none;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 8px;
-  color: #4f5d70;
 
-  &:hover {
-    background: #f3f6fa;
-  }
+  font-size: 16px;
+  color: var(--text);
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  transition: 0.25s;
+}
+
+.mobile-link:hover {
+  background: rgba(24, 71, 157, 0.08);
 }
 
 /* MOBILE LANG */
+
 .mobile-lang {
   display: flex;
   gap: 6px;
-  background: #f1f4f8;
+
+  background: var(--bg);
+  border: 1px solid var(--border);
+
   padding: 4px;
   border-radius: 8px;
 
   button {
     flex: 1;
+
     border: none;
     background: transparent;
+
+    color: var(--text);
+
     padding: 8px;
+
     border-radius: 6px;
+    cursor: pointer;
   }
 
   .active {
@@ -185,12 +286,15 @@
 }
 
 /* MOBILE BUTTON */
+
 .mobile-btn {
   text-align: center;
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 768px) {
+
   .nav-links,
   .nav-right {
     display: none;
@@ -198,5 +302,9 @@
 
   .burger {
     display: block;
+  }
+
+  .logo-text {
+    font-size: 12px;
   }
 }

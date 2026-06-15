@@ -1,0 +1,21 @@
+:root {
+  --bg: #ffffff;
+  --text: #172033;
+  --card: #ffffff;
+  --border: #e7edf5;
+  --primary: #18479d;
+}
+
+body[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #f8fafc;
+  --card: #1e293b;
+  --border: #334155;
+  --primary: #3b82f6;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+}

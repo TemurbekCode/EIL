@@ -123,6 +123,9 @@ const uz_extra = {
   wh_sunday: "Yakshanba",
   wh_day_off: "Dam olish",
 
+  contact_eyebrow: "Biz bilan bog'laning",
+  get_consultation: "Konsultatsiya olish",
+
   // FAQ
   faq_eyebrow: "Ko'p so'raladigan savollar",
   faq_title: "Savollaringiz bormi?",
@@ -299,6 +302,9 @@ const ru_extra = {
   form_message_ph: "Muammongiz yoki savolingizni yozing...",
   form_submit: "Yuborish",
   form_note: "Первая консультация бесплатна. Ваши данные не передаются третьим лицам.",
+
+  contact_eyebrow: "Свяжитесь с нами",
+  get_consultation: "Получить консультацию",
 
 
   // FAQ
