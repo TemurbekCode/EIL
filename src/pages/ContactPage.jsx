@@ -29,12 +29,12 @@ const INFO_CARDS = [
         value: '@eil_logistics',
     },
     {
-        href: 'https://t.me/eilbot',
+        href: 'https://t.me/Truckuzbot',
         icon: 'ti-robot',
         iconBg: '#F0EEFF',
         iconColor: '#534AB7',
         labelKey: 'contact_bot',
-        value: '@eil_bot',
+        value: '@Truckuz_bot',
     },
     {
         href: 'mailto:humoyunr66@gmail.com',

@@ -3,7 +3,6 @@ import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next, useTranslation as useRI18nTranslation } from 'react-i18next'
 
-// i18n resource definitions for Uzbek (uz) and Russian (ru)
 const uz_extra = {
   // EDUCATION PAGE
   edu_badge: "Ta'lim markazi",

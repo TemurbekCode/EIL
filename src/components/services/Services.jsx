@@ -12,6 +12,7 @@ export default function Services({ t }) {
   return (
     <section className="services-section" id="services">
       <div className="container">
+        
         <div className="section-head">
           <div className="section-eyebrow">{t('services_eyebrow')}</div>
           <h1 className="section-title">{t('services_title')}</h1>
